@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    animation: fadein 1.5s;
+    -webkit-animation: fadein 1.5s;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 0 0 5px white;
+    padding: 50px;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 2px;
+}
+
+.bar {
+    background-color: #33ca00;
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 10px;
+}
+
+.bar div {
+    flex-grow: 1;
+    margin: 10px;
+}
+
+.bar a {
+    width: 100px;
+    display: block;
+    background-color: #2eb900;
+    margin: 10px;
+    box-shadow: 0 0 5px black inset;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 46px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.bar a,
+.bar a:hover,
+.bar a:active,
+.bar a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+#contact {
+    position: absolute;
+    z-index: 2;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#contacthd {
+    z-index: 1;
+    padding: 10px;
+    background-color: #444;
+    cursor: default;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    margin: -20px -20px 20 -20px;
+    text-shadow: 0 0 2px white;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
